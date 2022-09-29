@@ -1,16 +1,21 @@
-#k_Text{
-    margin-left: 20px;
+.k_Text{
+    margin-left: 15px;
     margin-top: 40px;
-    font-size: 50px;
-    width: 75%;
+    font-size: 30px;
+    width: 65%;
     background-color: white;
     
 }
+.k_Text::placeholder{
+    font-size: medium;
+    margin-bottom: 100px;
+}
 
-#k_Add{
+.k_Add{
+    margin-left:1px;
     margin-top: 5px;
-    font-size: 43px;
-    width: 15%;
+    font-size: 25px;
+    width: 20%;
     background-color: white;
 }
 
