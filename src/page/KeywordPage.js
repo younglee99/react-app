@@ -16,10 +16,9 @@ const KeywordPage = () => {
             ...word,
             keyword
         ])
-        // setKeyword(''); 
-      }
+        setKeyword(''); 
+    }
 
-      console.log(word);
     return (
         <div className='page'>
             <Header title = "키워드 알림 설정"/>
@@ -31,10 +30,13 @@ const KeywordPage = () => {
                 value={keyword}
                 />
             <button className="k_Add" onClick={onReset}>추가</button>
-            {`${word}`}
-            {word.map((e)=>{
-                return <div><div className=''>word</div>|<div onClick={delete}>X</div></div>
-            })}
+            <section className="keywordSection">
+            {
+            word && word.map((e)=>{
+                    return <div className='keyword' >{e}</div>
+                })
+            }
+            </section>
             </div>
             <Footer/>
         </div>
